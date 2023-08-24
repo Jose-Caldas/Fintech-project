@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Sidenav() {
+const Sidenav = () => {
   return <div>Sidenav</div>
 }
 

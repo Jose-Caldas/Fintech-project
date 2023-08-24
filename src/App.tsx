@@ -7,7 +7,7 @@ import Summary from './pages/Summary'
 function App() {
   return (
     <DataContextProvider>
-      <div>
+      <div className="container">
         <Sidenav />
         <main>
           <Header />
