@@ -1,7 +1,7 @@
 import { createContext, PropsWithChildren, useContext, useState } from 'react'
 import useFetch from '../hooks/useFetch'
 
-interface Data {
+export interface Data {
   id: string
   nome: string
   preco: number
