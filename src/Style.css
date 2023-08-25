@@ -81,8 +81,46 @@ ul {
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
+  grid-template-columns: 240px auto;
 }
 
+/* Sidenav */
+.sidenav li {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.sidenav li span {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--gap);
+}
+
+.sidenav li a {
+  flex: 1;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-1);
+  padding: var(--gap-s) 0;
+}
+
+.sidenav li:hover span {
+  background-color: var(--color-3);
+}
+
+/* daterange */
+.daterange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+/* summary */
 .resumo {
   font-size: 1.5rem;
   font-weight: 600;
@@ -94,6 +132,7 @@ ul {
   color: var(--color-1);
 }
 
+/* Sales */
 .sale {
   display: grid;
   grid-template-columns: auto auto 1fr;
