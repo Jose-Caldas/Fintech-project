@@ -1,8 +1,9 @@
 import { UseData } from '../context/DataContext'
 
 const Summary = () => {
-  const { data } = UseData()
+  const { data, loading } = UseData()
 
+  if (loading) return <p>Carregando...</p>
   if (data === null) return null
   return (
     <section>
