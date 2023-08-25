@@ -1,8 +1,8 @@
-import { UseData } from '../context/DataContext'
+// import { UseData } from '../context/DataContext'
 
 const Summary = () => {
-  const { data } = UseData()
-  console.log(data)
+  // const { data } = UseData()
+  // console.log(data)
   return <div>Resumo</div>
 }
 
