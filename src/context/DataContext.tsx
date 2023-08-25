@@ -5,7 +5,7 @@ interface Data {
   id: string
   nome: string
   preco: number
-  status: 'pago' | 'processado' | 'falha'
+  status: 'pago' | 'processando' | 'falha'
   pagamento: 'boleto' | 'pix' | 'cartao'
   parcelas: number | null
   data: string
