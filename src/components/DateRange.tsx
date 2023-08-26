@@ -11,13 +11,12 @@ const DateRange = () => {
         value={init}
         onChange={({ target }) => setInit(target.value)}
       />
-      <p>{init}</p>
+
       <DateInput
         label="Final"
         value={final}
         onChange={({ target }) => setFinal(target.value)}
       />
-      <p>{final}</p>
     </form>
   )
 }
