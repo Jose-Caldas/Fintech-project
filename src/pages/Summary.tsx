@@ -1,9 +1,11 @@
+import Loading from '../components/Loading'
+import SalesGraph from '../components/SalesGraph'
 import { UseData } from '../context/DataContext'
 
 const Summary = () => {
   const { data, loading } = UseData()
 
-  if (loading) return <p>Carregando...</p>
+  if (loading) return <Loading />
   if (data === null) return null
   return (
     <section>
@@ -44,7 +46,9 @@ const Summary = () => {
           </span>
         </div>
       </div>
-      <div className="box mb">Gráficos</div>
+      <div className="box mb">
+        <SalesGraph data={data} />
+      </div>
     </section>
   )
 }

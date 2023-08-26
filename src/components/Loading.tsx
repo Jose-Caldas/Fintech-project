@@ -11,14 +11,17 @@ const styleLoading: React.CSSProperties = {
 
 const Loading = () => {
   return (
-    <div className="mb" style={styleLoading}>
-      <style>
-        {`@keyframes spin {
+    <div>
+      <div className="mb" style={styleLoading}>
+        <style>
+          {`@keyframes spin {
             to {
               transform: rotate(360deg);
             }
           }`}
-      </style>
+        </style>
+      </div>
+      <p>Carregando...</p>
     </div>
   )
 }
